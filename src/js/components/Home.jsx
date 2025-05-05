@@ -38,7 +38,7 @@ const onClick = (event) => {
 							<input placeholder="add your task" className="task" onKeyDown={onKeyDown} value={newTask} />
 						</form>
 					<div className="taskButton">
-					{taskList.length === 0 ? ("") :(
+					{taskList.length === 0 ? ("No hay tareas, añadir tareas") :(
 						taskList.map((task,index) => <p className="taskItem" key={index}> {task} <button  onClick={() => deleteTask(task)}>❌</button> </p>))}
 					</div>
 					<div>
